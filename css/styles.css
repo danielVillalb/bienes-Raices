@@ -362,14 +362,22 @@ h4{
     }
     .iconos-nosotros{
         display:flex;
+        flex-direction: column;
         justify-content:space-between;
         flex-wrap: wrap;
         margin-left: 1.5rem;
+    }
+    .icono div img{
+        margin-left: 40%;
+    }
+    .icono p{
+        margin-left: 40%;
     }
     .contenedor-anuncios{
         flex-direction: column;
         margin-left: 1rem;
         margin-right: 1rem;
+        
     }
     .contenido-contactos{
         margin-left: 1.5rem;
@@ -393,6 +401,13 @@ h4{
         margin-right: 10%;
         font-size: 1.5rem;
     }
+    .boton-verde{
+        display: block;
+        width: 100%;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+   
 }
 
 
