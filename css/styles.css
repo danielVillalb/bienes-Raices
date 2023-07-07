@@ -3,14 +3,14 @@ html{
    
 }
 *, *:before,*:after{
-    box-sizing: inherit;/*no altera el width de un elemento*/
+    box-sizing: border-box;/*no altera el width de un elemento*/
 }
 /*globales*/
 body{
-   font-family: 'Lato', sans-serif;
-   font-size:1.6rem;
-   line-height: 2;
-  
+    font-family: 'Lato', sans-serif;
+    font-size:1.6rem;
+    line-height: 2;
+
 }
 *{
     text-decoration: none;
@@ -127,17 +127,16 @@ h4{
     margin-right: 2rem;
 }
 .navegacion a:hover{
-    color:#718100
+    color:#71b100;
 } 
-.navegacion a:last-of-type{
-    margin: 0;
+.imagen-logo{
+    margin-left: 1rem;
 }
 
 /*Iconos nosotros*/
 .iconos-nosotros{
     display:flex;
     justify-content:space-between;
-   
 
 }
 
@@ -346,9 +345,11 @@ h4{
 @media (max-width: 768px){
     
     .barra{
+        width: 100%;
         color: #718100;
-        display: inline-block;   
-        margin-left: 1.5rem;     
+        display: flex;   
+        justify-content: center;
+        align-items: center;     
     }
     h1{
         margin: 1.5rem;
@@ -357,6 +358,7 @@ h4{
         margin-left: 1.2rem;
     }
     .imagen-logo{
+        width: 100%;
         background-position: center center;
         background-size: cover;
     }
@@ -416,7 +418,11 @@ h4{
 
 
 
-
+@media(max-width:768px){
+    .navegacion{
+        display: none;
+    }
+}
 
 
 
